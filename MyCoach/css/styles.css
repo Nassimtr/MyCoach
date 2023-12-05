@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles de la barre de navigation */
+
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.navbar a:hover {
+    color: #ddd;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+}
+
+.coach-section {
+    flex: 1;
+    padding: 20px;
+    border-right: 2px solid #ddd;
+}
+
+.coach-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Pour rendre la photo en cercle */
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+}
+
+.activities-section {
+    flex: 2;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.activity {
+    margin-bottom: 20px;
+    flex-basis: calc(50% - 10px); /* 10px est la moitié de l'espace entre deux activités */
+}
+
+.activity img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.activity h3 {
+    margin-top: 10px;
+}
